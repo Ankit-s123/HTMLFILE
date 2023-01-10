@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array sort using bubble sort </title>
+    <script>
+        let data = [12,10,50,40,45,60]
+        for(i=0;i<data.length;i++){
+            console.log(data)
+            for(j=0;j<data.length;j++){
+            if(data[j]>data[j+1]){
+                let temp =data[j];
+                data[j] = data[j+1]
+                data[j+1] = temp
+            }
+            }   
+        }
+        document.write(data)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

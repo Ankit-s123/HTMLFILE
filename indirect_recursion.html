@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Indirect Recursion</title>
+    <script>
+        let money = 100;
+        let apple=0;
+        function apple(x){
+            if(x>0)
+      buyMore(x)
+      else
+      console.log("i dont have money");
+        }
+        function buyMore(x){
+            apple++
+       apple(x-10)
+        }
+        apple(money)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
