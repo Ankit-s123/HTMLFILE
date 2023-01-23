@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack in java script</title>
+    <script>
+        let data = []
+        let current_size = data.length;
+        let max = 5;
+        function push(newVal){
+            if(current_size>=max){
+                alert("stack is full you can not add"+newVal)
+            }
+            data[current_size] = newVal;
+            current_size+=1
+        }
+        function pop(){
+            if(current_size>0){
+current_size-=1
+data.length = current_size;
+            }
+            else{
+                alert("stack is already empty")
+            }
+        }
+        push(20)
+        push(10)
+        push(30)
+        push(40)
+        push(90)
+        push(70)
+        pop()
+        pop()
+        pop()
+        pop()
+        pop()
+        pop()
+        pop()
+        console.log(data)
+    </script>
+</head>
+<body>
+    <h1>Stack in javascript</h1>
+</body>
+</html>
